@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Carlos Manuel Sánchez Vargas | Portafolio Profesional</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:wght@400;500;700&amp;family=Inter:wght@400;500;700&amp;family=Fira+Code:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        error: "#ba1a1a",
+                        "on-secondary-fixed-variant": "#085041",
+                        "tertiary-container": "#353535",
+                        "on-surface": "#1b1c1c",
+                        "surface-container-high": "#e9e8e7",
+                        "surface-bright": "#faf9f9",
+                        "secondary-fixed": "#aff0da",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c1c8c8",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#dbdad9",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#94d3be",
+                        "on-primary-fixed-variant": "#005236",
+                        "surface-variant": "#e3e2e2",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#1b1b1b",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#002113",
+                        "primary-fixed": "#aaf2cc",
+                        "surface-container": "#efeded",
+                        "secondary-container": "#aff0da",
+                        "primary-container": "#003e28",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1b1c1c",
+                        secondary: "#2a6958",
+                        "on-primary-container": "#67ac8a",
+                        surface: "#faf9f9",
+                        primary: "#002617",
+                        "on-surface-variant": "#424849",
+                        "surface-container-lowest": "#ffffff",
+                        outline: "#727879",
+                        "on-tertiary-container": "#9e9e9e",
+                        "on-secondary-container": "#316f5e",
+                        background: "#faf9f9",
+                        tertiary: "#202020",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "surface-container-low": "#f5f3f3",
+                        "tertiary-fixed": "#e2e2e2",
+                        "surface-container-highest": "#e3e2e2",
+                        "surface-tint": "#236a4d",
+                        "inverse-surface": "#2f3031",
+                        "inverse-primary": "#8fd5b1",
+                        "primary-fixed-dim": "#8fd5b1",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "on-secondary-fixed": "#002018",
+                        "inverse-on-surface": "#f2f0f0",
+                        "neon-green": "#39FF14",
+                        "cyber-cyan": "#00FFFF",
+                        "verdoso-forest": "#1B3022",
+                        "verdoso-emerald": "#2E7D32",
+                        "verdoso-sage": "#708D81",
+                        "verdoso-mint": "#A4C3B2"
+                    },
+                    borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"},
+                    spacing: {"container-max": "1200px", "section-gap": "120px", "margin-mobile": "20px", "margin-desktop": "64px", gutter: "24px"},
+                    fontFamily: {
+                        "display-lg": ["Libre Caslon Text"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "label-md": ["Hanken Grotesk"],
+                        headline: ["Climate Crisis"],
+                        display: ["Climate Crisis"],
+                        body: ["Inter"],
+                        label: ["Inter"],
+                        mono: ["Fira Code", "monospace"]
+                    },
+                    fontSize: {
+                        "display-lg": ["64px", {lineHeight: "72px", fontWeight: "700"}],
+                        "body-lg": ["18px", {lineHeight: "28px", fontWeight: "400"}],
+                        "body-md": ["16px", {lineHeight: "24px", fontWeight: "400"}],
+                        "headline-lg": ["40px", {lineHeight: "48px", fontWeight: "700"}],
+                        "headline-lg-mobile": ["32px", {lineHeight: "40px", fontWeight: "700"}],
+                        "headline-md": ["28px", {lineHeight: "36px", fontWeight: "600"}],
+                        "label-md": ["14px", {lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "600"}]
+                    }
+                }
+            }
+        };
+    </script>
+<style>
+        :root { scroll-behavior: smooth; }
+        body { transition: background-color 0.5s ease, color 0.5s ease; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
+
+        .mesh-bg {
+            background-color: #f7f9fb;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(145,30%,90%,1) 0, transparent 50%), 
+                radial-gradient(at 50% 0%, hsla(160,20%,85%,0.5) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, hsla(180,20%,90%,0.5) 0, transparent 50%);
+            transition: background 0.5s ease;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            .mesh-bg {
+                background-color: #0d1b11;
+                background-image: 
+                    radial-gradient(at 0% 0%, hsla(145,40%,10%,1) 0, transparent 50%), 
+                    radial-gradient(at 50% 0%, hsla(160,30%,15%,0.5) 0, transparent 50%), 
+                    radial-gradient(at 100% 0%, hsla(180,30%,15%,0.5) 0, transparent 50%);
+            }
+        }
+
+        .soft-elevation { box-shadow: 0 15px 35px -5px rgba(27, 48, 34, 0.12); }
+
+        .card-hover { transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        .card-hover:hover {
+            border-color: #2D5A27;
+            box-shadow: 0 30px 60px -12px rgba(27, 48, 34, 0.2), 0 0 20px rgba(112, 141, 129, 0.3);
+            transform: translateY(-12px) scale(1.03);
+        }
+        
+        /* Floating animations */
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(2deg); }
+        }
+        .animate-float { animation: floating 6s ease-in-out infinite; }
+        
+        @keyframes code-float {
+            0% { transform: translate(0, 0) opacity(0.7); }
+            50% { transform: translate(15px, -20px) opacity(1); }
+            100% { transform: translate(0, 0) opacity(0.7); }
+        }
+        .code-tag { animation: code-float 4s ease-in-out infinite; }
+
+        /* Glitch effect on hover */
+        .glitch-hover:hover {
+            animation: glitch 0.3s cubic-bezier(.25,.46,.45,.94) both infinite;
+        }
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+
+        /* Reveal Animation */
+        .reveal { opacity: 0; transform: translateY(50px) scale(0.95); transition: all 1s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0) scale(1); }
+
+        #cursor-glow {
+            pointer-events: none;
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(57, 255, 20, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-box { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid transparent; }
+        .nav-box:hover { filter: brightness(1.1); transform: translateY(-3px); box-shadow: 0 4px 15px rgba(57, 255, 20, 0.4); }
+
+        /* Typing Effect Class */
+        .type-effect::after {
+            content: '|';
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        
+        #particleCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-surface dark:bg-primary-container text-on-surface dark:text-inverse-on-surface font-body-md overflow-x-hidden transition-colors duration-500">
+<canvas id="particleCanvas"></canvas>
+<div class="hidden md:block" id="cursor-glow"></div>
+<!-- TopNavBar -->
+<nav class="bg-verdoso-forest/95 dark:bg-black/90 backdrop-blur-lg border-b border-neon-green/20 docked full-width top-0 sticky z-50 shadow-[0_0_20px_rgba(57,255,20,0.1)] h-24 transition-all duration-500">
+<div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
+<div class="font-headline-md text-headline-md font-extrabold text-neon-green tracking-tighter hover:scale-110 transition-transform cursor-pointer">CMSV<span class="animate-pulse">_</span></div>
+<div class="hidden lg:flex gap-3 items-center">
+<a class="nav-box bg-primary dark:bg-verdoso-forest text-neon-green px-5 py-3 rounded-xl font-mono text-xs font-bold border-neon-green/30" href="#profile">&lt;Perfil /&gt;</a>
+<a class="nav-box bg-primary dark:bg-verdoso-forest text-cyber-cyan px-5 py-3 rounded-xl font-mono text-xs font-bold border-cyber-cyan/30" href="#education">&lt;Educación /&gt;</a>
+<a class="nav-box bg-primary dark:bg-verdoso-forest text-neon-green px-5 py-3 rounded-xl font-mono text-xs font-bold border-neon-green/30" href="#skills">&lt;Skills /&gt;</a>
+<a class="nav-box bg-primary dark:bg-verdoso-forest text-cyber-cyan px-5 py-3 rounded-xl font-mono text-xs font-bold border-cyber-cyan/30" href="#experience">&lt;Proyectos /&gt;</a>
+<a class="nav-box bg-neon-green text-verdoso-forest px-5 py-3 rounded-xl font-mono text-xs font-bold" href="#contact">Contactar</a>
+</div>
+<button class="bg-cyber-cyan text-verdoso-forest px-8 py-3 rounded-full font-label-md font-bold transition-all duration-300 hover:scale-110 hover:shadow-[0_0_25px_rgba(0,255,255,0.5)] active:scale-95 shadow-lg">
+            Hire Me
+        </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center overflow-hidden mesh-bg">
+<div class="px-margin-desktop max-w-container-max mx-auto w-full relative z-10">
+<div class="flex flex-col items-center text-center space-y-10 reveal">
+<div class="space-y-6 flex flex-col items-center">
+<span class="inline-block bg-neon-green/10 text-neon-green px-4 py-1 rounded-full font-mono tracking-widest uppercase text-xs border border-neon-green/30 animate-pulse">SYSTEM STATUS: ONLINE</span>
+<h1 class="font-display-lg text-display-lg text-primary dark:text-white leading-[1.1]">
+                    Carlos Manuel <br/>
+<span class="text-neon-green type-effect" id="typed-text">Sánchez Vargas</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant dark:text-outline-variant max-w-2xl leading-relaxed">
+                    Especialista en Soporte IT &amp; Desarrollador Web Full Stack en formación. Resolviendo problemas complejos con código limpio y seguridad digital.
+                </p>
+</div>
+<div class="flex flex-wrap gap-6 items-center justify-center">
+<a class="bg-neon-green text-verdoso-forest px-10 py-5 rounded-xl font-bold hover:scale-[1.08] hover:shadow-[0_0_30px_rgba(57,255,20,0.4)] active:scale-95 transition-all inline-flex items-center gap-3 shadow-xl" href="#contact">
+<span class="material-symbols-outlined">send</span> Contactar ahora
+                </a>
+<a class="border-2 border-neon-green text-neon-green px-10 py-5 rounded-xl font-bold hover:bg-neon-green/10 hover:scale-[1.08] active:scale-95 transition-all inline-flex items-center gap-3" href="#">
+<span class="material-symbols-outlined">download</span> Descargar CV
+                </a>
+<!-- Social Links in Hero -->
+<div class="flex gap-4">
+<a class="w-14 h-14 bg-verdoso-forest text-white rounded-xl flex items-center justify-center hover:bg-neon-green hover:text-verdoso-forest hover:scale-110 transition-all border border-neon-green/20" href="https://github.com/dashboard" target="_blank">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</a>
+<a class="w-14 h-14 bg-verdoso-forest text-white rounded-xl flex items-center justify-center hover:bg-cyber-cyan hover:text-verdoso-forest hover:scale-110 transition-all border border-cyber-cyan/20" href="#">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Professional Profile -->
+<section class="py-section-gap bg-surface-container-lowest dark:bg-inverse-surface transition-colors duration-500 overflow-hidden" id="profile">
+<div class="px-margin-desktop max-w-container-max mx-auto reveal">
+<div class="max-w-4xl relative">
+<h2 class="font-headline-lg text-headline-lg text-primary dark:text-neon-green mb-10 flex items-center gap-4 glitch-hover cursor-default">
+<span class="w-12 h-1 bg-neon-green rounded-full"></span> Perfil Profesional
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant dark:text-outline-variant leading-relaxed text-lg lg:text-xl border-l-4 border-neon-green/30 pl-8 bg-neon-green/5 p-8 rounded-r-2xl">
+                Soy una persona responsable, proactiva y profundamente comprometida con el aprendizaje continuo. Actualmente, curso estudios de inglés con el objetivo de fortalecer mis habilidades en el ámbito tecnológico global. Mi trayectoria se fundamenta en sólidos conocimientos en soporte técnico básico, gestión de redes, mantenimiento de hardware y desarrollo web inicial, respaldados por una valiosa experiencia en entornos de trabajo colaborativo.
+            </p>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="py-section-gap bg-surface dark:bg-primary-container transition-colors duration-500" id="skills">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-20 reveal">
+<h2 class="font-headline-lg text-headline-lg text-primary dark:text-neon-green glitch-hover cursor-default">Habilidades Especializadas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant mt-4 text-lg font-mono">&gt; stack --list --all</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Technical Skills -->
+<div class="md:col-span-2 bg-white dark:bg-black/40 p-12 rounded-2xl border border-neon-green/20 soft-elevation transition-all card-hover reveal hover:border-neon-green/50" style="transition-delay: 150ms;">
+<div class="flex items-center gap-6 mb-10">
+<div class="w-16 h-16 bg-neon-green/10 rounded-2xl flex items-center justify-center text-neon-green">
+<span class="material-symbols-outlined text-4xl">terminal</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary dark:text-neon-green">Technical Proficiency</h3>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+<div>
+<h4 class="font-mono text-neon-green mb-6 uppercase tracking-widest border-b-2 border-neon-green/20 pb-2">Infraestructura</h4>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 font-body-lg text-on-surface-variant dark:text-outline-variant group">
+<span class="w-2.5 h-2.5 bg-neon-green rounded-full group-hover:scale-150 transition-transform shadow-[0_0_8px_#39FF14]"></span> Redes básicas
+                            </li>
+<li class="flex items-center gap-4 font-body-lg text-on-surface-variant dark:text-outline-variant group">
+<span class="w-2.5 h-2.5 bg-neon-green rounded-full group-hover:scale-150 transition-transform shadow-[0_0_8px_#39FF14]"></span> Hardware y Mantenimiento
+                            </li>
+</ul>
+</div>
+<div>
+<h4 class="font-mono text-cyber-cyan mb-6 uppercase tracking-widest border-b-2 border-cyber-cyan/20 pb-2">Software</h4>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 font-body-lg text-on-surface-variant dark:text-outline-variant group">
+<span class="w-2.5 h-2.5 bg-cyber-cyan rounded-full group-hover:scale-150 transition-transform shadow-[0_0_8px_#00FFFF]"></span> Ofimática Avanzada
+                            </li>
+<li class="flex items-center gap-4 font-body-lg text-on-surface-variant dark:text-outline-variant group">
+<span class="w-2.5 h-2.5 bg-cyber-cyan rounded-full group-hover:scale-150 transition-transform shadow-[0_0_8px_#00FFFF]"></span> Desarrollo Web Inicial
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Soft Skills -->
+<div 300ms;"="" class="bg-white dark:bg-black/40 p-12 rounded-2xl border border-cyber-cyan/20 soft-elevation transition-all card-hover reveal style=" transition-delay:="">
+<div class="flex items-center gap-6 mb-10">
+<div class="w-16 h-16 bg-cyber-cyan/10 rounded-2xl flex items-center justify-center text-cyber-cyan">
+<span class="material-symbols-outlined text-4xl">psychology</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary dark:text-cyber-cyan">Soft Skills</h3>
+</div>
+<div class="flex flex-wrap gap-4">
+<span class="bg-neon-green/10 text-verdoso-forest dark:text-neon-green px-5 py-3 rounded-xl font-mono text-sm border-2 border-transparent hover:border-neon-green transition-all cursor-default shadow-sm hover:shadow-neon-green/20">Responsabilidad</span>
+<span class="bg-cyber-cyan/10 text-verdoso-forest dark:text-cyber-cyan px-5 py-3 rounded-xl font-mono text-sm border-2 border-transparent hover:border-cyber-cyan transition-all cursor-default shadow-sm hover:shadow-cyber-cyan/20">Trabajo en equipo</span>
+<span class="bg-neon-green/10 text-verdoso-forest dark:text-neon-green px-5 py-3 rounded-xl font-mono text-sm border-2 border-transparent hover:border-neon-green transition-all cursor-default shadow-sm hover:shadow-neon-green/20">Adaptabilidad</span>
+<span class="bg-cyber-cyan/10 text-verdoso-forest dark:text-cyber-cyan px-5 py-3 rounded-xl font-mono text-sm border-2 border-transparent hover:border-cyber-cyan transition-all cursor-default shadow-sm hover:shadow-cyber-cyan/20">Comunicación</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Education & Certifications -->
+<section class="py-section-gap bg-surface-container-low dark:bg-surface-dim transition-colors duration-500" id="education">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-verdoso-forest dark:text-neon-green mb-16 reveal glitch-hover cursor-default">Formación &amp; Certificaciones</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div class="space-y-12 reveal">
+<div class="relative pl-12 border-l-4 border-neon-green/30">
+<div class="absolute -left-[14px] top-0 w-[24px] h-[24px] bg-neon-green border-4 border-white dark:border-primary-container rounded-full shadow-[0_0_15px_rgba(57,255,20,0.6)]"></div>
+<span class="font-mono text-neon-green uppercase tracking-tighter text-xs font-bold bg-neon-green/10 px-2 py-1 rounded">ACADEMIC_RECORD</span>
+<h3 class="font-headline-md text-headline-md text-primary dark:text-white mt-2">Noveno año concluido</h3>
+<p class="text-on-surface-variant dark:text-outline-variant text-lg">Costa Rica</p>
+</div>
+<div class="relative pl-12 border-l-4 border-cyber-cyan/30">
+<div class="absolute -left-[14px] top-0 w-[24px] h-[24px] bg-cyber-cyan border-4 border-white dark:border-primary-container rounded-full shadow-[0_0_15px_rgba(0,255,255,0.6)]"></div>
+<span class="font-mono text-cyber-cyan uppercase tracking-tighter text-xs font-bold bg-cyber-cyan/10 px-2 py-1 rounded">LANG_STATUS</span>
+<h3 class="font-headline-md text-headline-md text-primary dark:text-white mt-2">Inglés Nivel A2</h3>
+<p class="text-on-surface-variant dark:text-outline-variant text-lg">Estudios en curso // Processing...</p>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 reveal" style="transition-delay: 200ms;">
+<div class="bg-white dark:bg-black/40 p-8 rounded-2xl border border-outline-variant/30 dark:border-neon-green/20 shadow-lg card-hover hover:scale-105">
+<span class="material-symbols-outlined text-neon-green text-3xl mb-6">verified</span>
+<h4 class="font-mono text-verdoso-forest dark:text-white font-bold text-lg">Cisco</h4>
+<p class="text-body-md text-on-surface-variant dark:text-outline-variant mt-3 leading-relaxed">Conceptos Básicos de Redes y Hardware</p>
+</div>
+<div class="bg-white dark:bg-black/40 p-8 rounded-2xl border border-outline-variant/30 dark:border-cyber-cyan/20 shadow-lg card-hover hover:scale-105">
+<span class="material-symbols-outlined text-cyber-cyan text-3xl mb-6">verified</span>
+<h4 class="font-mono text-verdoso-forest dark:text-white font-bold text-lg">Microsoft Excel</h4>
+<p class="text-body-md text-on-surface-variant dark:text-outline-variant mt-3 leading-relaxed">Nivel Básico/Intermedio</p>
+</div>
+<div class="bg-white dark:bg-black/40 p-8 rounded-2xl border border-outline-variant/30 dark:border-neon-green/20 shadow-lg card-hover hover:scale-105">
+<span class="material-symbols-outlined text-neon-green text-3xl mb-6">verified</span>
+<h4 class="font-mono text-verdoso-forest dark:text-white font-bold text-lg">Herramientas Ofimáticas</h4>
+<p class="text-body-md text-on-surface-variant dark:text-outline-variant mt-3 leading-relaxed">Writer, Word, PowerPoint</p>
+</div>
+<div class="bg-white dark:bg-black/40 p-8 rounded-2xl border border-outline-variant/30 dark:border-cyber-cyan/20 shadow-lg card-hover hover:scale-105">
+<span class="material-symbols-outlined text-cyber-cyan text-3xl mb-6">verified</span>
+<h4 class="font-mono text-verdoso-forest dark:text-white font-bold text-lg">Mantenimiento PC</h4>
+<p class="text-body-md text-on-surface-variant dark:text-outline-variant mt-3 leading-relaxed">Limpieza y mantenimiento preventivo</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="py-section-gap bg-surface-container-lowest dark:bg-inverse-surface transition-colors duration-500" id="experience">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary dark:text-neon-green mb-16 reveal glitch-hover cursor-default">Experiencia &amp; Proyectos</h2>
+<div class="bg-white dark:bg-black/60 rounded-3xl p-10 md:p-20 border-2 border-neon-green/20 relative overflow-hidden card-hover reveal transition-all duration-500 shadow-2xl">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-neon-green/5 -skew-x-12 translate-x-1/4"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-4">
+<span class="bg-neon-green text-verdoso-forest px-4 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-widest">DEPLOYED</span>
+<h3 class="font-headline-md text-headline-md text-primary dark:text-white mt-6">CostaCoders</h3>
+<p class="text-on-surface-variant dark:text-outline-variant mt-4 font-bold font-mono text-cyber-cyan">PROJECT_INSTITUTIONAL</p>
+<a class="group bg-neon-green text-verdoso-forest px-8 py-4 rounded-xl font-bold inline-flex items-center gap-3 mt-10 hover:scale-105 active:scale-95 transition-all shadow-lg hover:shadow-neon-green/40" href="https://ctp-ing-carlos-pascua-zuniga.vercel.app/" target="_blank">
+                        Ver Proyecto <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">open_in_new</span>
+</a>
+</div>
+<div class="lg:col-span-8">
+<h4 class="font-headline-md text-headline-md text-primary dark:text-white mb-8 border-l-8 border-neon-green pl-6">Desarrollo Web Colegio Carlos Pascua Zúñiga</h4>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="flex gap-6 p-6 rounded-2xl bg-surface-container/50 dark:bg-white/5 border border-outline-variant/20">
+<span class="material-symbols-outlined text-neon-green text-3xl">check_circle</span>
+<div>
+<p class="font-bold text-primary dark:text-white text-xl">Arquitectura Web</p>
+<p class="text-body-md text-on-surface-variant dark:text-outline-variant mt-2">Desarrollo del sitio institucional con enfoque en usabilidad y performance.</p>
+</div>
+</div>
+<div class="flex gap-6 p-6 rounded-2xl bg-surface-container/50 dark:bg-white/5 border border-outline-variant/20">
+<span class="material-symbols-outlined text-cyber-cyan text-3xl">check_circle</span>
+<div>
+<p class="font-bold text-primary dark:text-white text-xl">Contenido</p>
+<p class="text-body-md text-on-surface-variant dark:text-outline-variant mt-2">Estructuración y organización estratégica de la información crítica.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap mesh-bg relative" id="contact">
+<div class="px-margin-desktop max-w-container-max mx-auto relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="reveal">
+<h2 class="font-headline-lg text-headline-lg text-verdoso-forest dark:text-neon-green mb-8 glitch-hover cursor-default">Iniciemos una conexión</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant dark:text-outline-variant mb-12 text-xl leading-relaxed">
+                    Estoy disponible para nuevas oportunidades y colaboraciones técnicas. Si buscas a alguien con compromiso y capacidad técnica, envía un mensaje al servidor.
+                </p>
+<div class="space-y-8">
+<div class="flex items-center gap-6 group cursor-pointer">
+<div class="w-16 h-16 bg-verdoso-forest dark:bg-black/80 rounded-2xl flex items-center justify-center text-white dark:text-neon-green transition-all group-hover:scale-110 group-hover:rotate-6 shadow-lg border border-neon-green/20">
+<span class="material-symbols-outlined text-3xl">mail</span>
+</div>
+<div>
+<p class="font-mono text-neon-green font-bold text-xs uppercase tracking-widest">PROTOCOL: SMTP</p>
+<a class="text-xl text-on-surface-variant dark:text-outline-variant group-hover:text-neon-green transition-colors" href="mailto:chargas9090@gmail.com">chargas9090@gmail.com</a>
+</div>
+</div>
+<div class="flex items-center gap-6 group cursor-pointer">
+<div class="w-16 h-16 bg-verdoso-forest dark:bg-black/80 rounded-2xl flex items-center justify-center text-white dark:text-cyber-cyan transition-all group-hover:scale-110 group-hover:-rotate-6 shadow-lg border border-cyber-cyan/20">
+<span class="material-symbols-outlined text-3xl">call</span>
+</div>
+<div>
+<p class="font-mono text-cyber-cyan font-bold text-xs uppercase tracking-widest">PROTOCOL: VOIP</p>
+<a class="text-xl text-on-surface-variant dark:text-outline-variant group-hover:text-cyber-cyan transition-colors" href="tel:63814009">6381-4009</a>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-black/60 p-12 rounded-[2.5rem] shadow-2xl border-2 border-neon-green/20 reveal transition-all duration-500 hover:shadow-neon-green/10" style="transition-delay: 200ms;">
+<form class="space-y-8">
+<div class="space-y-3">
+<label class="font-mono text-neon-green font-bold text-xs uppercase tracking-widest">Nombre Completo</label>
+<input class="w-full h-14 px-6 bg-surface dark:bg-verdoso-forest/20 border-2 border-outline-variant dark:border-neon-green/20 text-on-surface dark:text-white rounded-xl focus:ring-4 focus:ring-neon-green/20 focus:border-neon-green transition-all outline-none" placeholder="USER_INPUT" type="text"/>
+</div>
+<div class="space-y-3">
+<label class="font-mono text-cyber-cyan font-bold text-xs uppercase tracking-widest">Email</label>
+<input class="w-full h-14 px-6 bg-surface dark:bg-verdoso-forest/20 border-2 border-outline-variant dark:border-cyber-cyan/20 text-on-surface dark:text-white rounded-xl focus:ring-4 focus:ring-cyber-cyan/20 focus:border-cyber-cyan transition-all outline-none" placeholder="auth@mail.com" type="email"/>
+</div>
+<div class="space-y-3">
+<label class="font-mono text-neon-green font-bold text-xs uppercase tracking-widest">Mensaje</label>
+<textarea class="w-full p-6 bg-surface dark:bg-verdoso-forest/20 border-2 border-outline-variant dark:border-neon-green/20 text-on-surface dark:text-white rounded-xl focus:ring-4 focus:ring-neon-green/20 focus:border-neon-green transition-all outline-none" placeholder="System request..." rows="4"></textarea>
+</div>
+<button class="w-full bg-neon-green text-verdoso-forest py-5 rounded-xl font-bold text-lg hover:scale-[1.03] active:scale-95 transition-all shadow-xl hover:shadow-neon-green/40 focus:outline-none" type="submit">
+                        [ ENVIAR_DATOS ]
+                    </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-verdoso-forest dark:bg-black py-20 border-t border-neon-green/20 transition-colors duration-500">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 px-margin-desktop max-w-container-max mx-auto items-start">
+<div class="reveal">
+<div class="font-headline-md text-headline-md font-extrabold text-neon-green mb-6">CMSV</div>
+<p class="text-white/70 dark:text-outline-variant font-body-lg leading-relaxed">Innovación técnica, seguridad y profesionalismo desde Heredia, Costa Rica. Construyendo el futuro bit a bit.</p>
+</div>
+<div class="reveal" style="transition-delay: 150ms;">
+<h4 class="font-mono text-cyber-cyan uppercase mb-8 font-extrabold tracking-widest text-xs">// ACCESS_MAP</h4>
+<div class="flex flex-col gap-4">
+<a class="text-white/80 hover:text-neon-green font-bold transition-all text-lg" href="#profile">Perfil Profesional</a>
+<a class="text-white/80 hover:text-neon-green font-bold transition-all text-lg" href="#skills">Habilidades</a>
+<a class="text-white/80 hover:text-neon-green font-bold transition-all text-lg" href="#experience">Experiencia</a>
+</div>
+</div>
+<div class="reveal" style="transition-delay: 300ms;">
+<h4 class="font-mono text-neon-green uppercase mb-8 font-extrabold tracking-widest text-xs">// SOCIAL_NET</h4>
+<div class="flex flex-wrap gap-4 mb-10">
+<a class="bg-white/10 p-4 rounded-xl text-white hover:bg-neon-green hover:text-verdoso-forest transition-all hover:scale-110 font-bold border border-white/10" href="https://github.com/dashboard">GitHub</a>
+<a class="bg-white/10 p-4 rounded-xl text-white hover:bg-cyber-cyan hover:text-verdoso-forest transition-all hover:scale-110 font-bold border border-white/10" href="#">LinkedIn</a>
+</div>
+<p class="text-white/40 text-body-md font-mono">© 2024 CMSV_OS v2.0. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+    // Typing effect for name
+    function typingEffect() {
+        const element = document.getElementById('typed-text');
+        const text = "Sánchez Vargas";
+        let index = 0;
+        element.textContent = "";
+        
+        function type() {
+            if (index < text.length) {
+                element.textContent += text.charAt(index);
+                index++;
+                setTimeout(type, 150);
+            }
+        }
+        type();
+    }
+
+    // Scroll Reveal Animation
+    function reveal() {
+        const reveals = document.querySelectorAll(".reveal");
+        reveals.forEach(element => {
+            const windowHeight = window.innerHeight;
+            const elementTop = element.getBoundingClientRect().top;
+            const elementVisible = 100;
+            if (elementTop < windowHeight - elementVisible) {
+                element.classList.add("active");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", reveal);
+    window.addEventListener("load", () => {
+        reveal();
+        typingEffect();
+    });
+
+    // Mouse Glow Effect
+    const cursorGlow = document.getElementById('cursor-glow');
+    document.addEventListener('mousemove', (e) => {
+        cursorGlow.style.left = e.clientX + 'px';
+        cursorGlow.style.top = e.clientY + 'px';
+    });
+
+    // Theme Sync
+    const updateTheme = () => {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+        } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+        }
+    };
+    
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateTheme);
+    updateTheme();
+
+    // Particle Background System
+    (function() {
+        const canvas = document.getElementById('particleCanvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let mouse = { x: null, y: null, radius: 180 };
+
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            init();
+        }
+
+        window.addEventListener('resize', resize);
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.x;
+            mouse.y = e.y;
+        });
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 0.5;
+                this.baseX = this.x;
+                this.baseY = this.y;
+                this.density = (Math.random() * 30) + 5;
+                this.color = window.matchMedia('(prefers-color-scheme: dark)').matches ? '#39FF14' : '#236a4d';
+            }
+            draw() {
+                ctx.fillStyle = this.color;
+                ctx.globalAlpha = 0.4;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.closePath();
+                ctx.fill();
+            }
+            update() {
+                let dx = mouse.x - this.x;
+                let dy = mouse.y - this.y;
+                let distance = Math.sqrt(dx * dx + dy * dy);
+                let forceDirectionX = dx / distance;
+                let forceDirectionY = dy / distance;
+                let maxDistance = mouse.radius;
+                let force = (maxDistance - distance) / maxDistance;
+                let directionX = forceDirectionX * force * this.density;
+                let directionY = forceDirectionY * force * this.density;
+
+                if (distance < mouse.radius) {
+                    this.x -= directionX;
+                    this.y -= directionY;
+                } else {
+                    if (this.x !== this.baseX) {
+                        let dx = this.x - this.baseX;
+                        this.x -= dx / 15;
+                    }
+                    if (this.y !== this.baseY) {
+                        let dy = this.y - this.baseY;
+                        this.y -= dy / 15;
+                    }
+                }
+            }
+        }
+
+        function init() {
+            particles = [];
+            let numberOfParticles = (canvas.width * canvas.height) / 8000;
+            for (let i = 0; i < numberOfParticles; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < particles.length; i++) {
+                particles[i].draw();
+                particles[i].update();
+            }
+            
+            // Draw connecting lines
+            for (let a = 0; a < particles.length; a++) {
+                for (let b = a; b < particles.length; b++) {
+                    let dx = particles[a].x - particles[b].x;
+                    let dy = particles[a].y - particles[b].y;
+                    let distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < 100) {
+                        ctx.strokeStyle = particles[a].color;
+                        ctx.globalAlpha = 1 - (distance / 100);
+                        ctx.lineWidth = 0.5;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[a].x, particles[a].y);
+                        ctx.lineTo(particles[b].x, particles[b].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+            requestAnimationFrame(animate);
+        }
+
+        resize();
+        animate();
+    })();
+</script>
+</body></html>
